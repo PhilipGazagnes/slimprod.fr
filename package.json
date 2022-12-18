@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.0.2"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.2.1",
+    "@nuxtjs/svg": "^0.1.6",
+    "axios": "^0.19.2",
+    "doc-cookies": "^1.1.0",
+    "in-view": "^0.6.1",
+    "node-mailjet": "^3.3.1",
+    "nuxt": "^2.11.0",
+    "nuxt-canonical": "^1.0.4",
+    "postcss-nested": "^4.2.1",
+    "vanilla-lazyload": "^15.1.1"
+  }
+}
