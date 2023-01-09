@@ -37,6 +37,7 @@ module.exports = {
     { src: '~/plugins/lazyload.js', mode: 'client' },
     { src: '~/plugins/in-view.js', mode: 'client' },
     { src: '~/plugins/gtm.js', mode: 'client' },
+    { src: '~/plugins/tawk-to.js', mode: 'client' },
   ],
   build: {
     postcss: {
