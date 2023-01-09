@@ -1,58 +1,41 @@
 <template>
   <div class="punchline">
-    <div
-      class="punchline__main"
-      :style="{
-        textShadow: `rgba(${
-          $options.highlightRgbColors[$store.state.bannerActiveImage - 1]
-            .mainTextShadow
-        }, 0.8) 0 2px 3px`,
-      }"
-    >
-      Music & Fun
+    <div class="punchline__main">
+      live music <span class="punchline__main__end">& fun !</span>
     </div>
-    <div
-      class="punchline__sub"
-      :style="{
-        backgroundColor: `rgba(${
-          $options.highlightRgbColors[$store.state.bannerActiveImage - 1]
-            .subBackground
-        }, 0.8)`,
-      }"
-    >
-      Pour votre événement666
+    <div class="punchline__sub">
+      Pour votre
+      <span ref="theme">{{ $options.eventThemes[activeTheme] }}</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  highlightRgbColors: [
-    {
-      mainTextShadow: '255,0,0',
-      subBackground: '255,0,0',
-    },
-    {
-      mainTextShadow: '0,255,0',
-      subBackground: '0,255,0',
-    },
-    {
-      mainTextShadow: '0,0,255',
-      subBackground: '0,0,255',
-    },
-    {
-      mainTextShadow: '255,0,255',
-      subBackground: '255,0,255',
-    },
+  eventThemes: [
+    'événement',
+    'mariage',
+    'séminaire',
+    'team-building',
+    'soirée festive',
   ],
-  props: {
-    highlightRgbColor: { type: String, default: '0, 0, 0' },
+  data() {
+    return {
+      activeTheme: 0,
+    };
   },
   mounted() {
-    this.initAnim();
+    setInterval(() => {
+      this.rollEventTheme();
+    }, 2000);
   },
   methods: {
-    initAnim() {},
+    rollEventTheme() {
+      this.activeTheme =
+        this.activeTheme === this.$options.eventThemes.length - 1
+          ? 0
+          : this.activeTheme + 1;
+    },
   },
 };
 </script>
@@ -60,15 +43,28 @@ export default {
 <style lang="postcss">
 .punchline {
   color: white;
-  font-family: 'Courier';
+  font-family: 'Geomanist';
+  text-align: center;
   &__main {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 3em;
+    padding: 0 50px;
+    font-size: 6em;
+    line-height: 1em;
+    text-shadow: 0 10px 0 #e0144c;
+    @media screen and (min-width: 1400px) {
+      font-size: 8em;
+    }
+    @media screen and (min-width: 1600px) {
+      font-size: 9em;
+    }
+    &__end {
+      white-space: nowrap;
+    }
   }
   &__sub {
-    padding: 10px;
-    font-size: 2em;
+    padding: 10px 20px;
+    font-size: 3em;
+    border-radius: 10px;
+    margin-top: 30px;
   }
 }
 </style>

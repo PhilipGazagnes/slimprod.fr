@@ -2,16 +2,18 @@
   <div class="page">
     <ChatBtn v-if="false" />
     <Banner />
-    <Intro v-if="false" />
-    <Values v-if="false" />
-    <Services v-if="false" />
-    <Team v-if="false" />
-    <Contact v-if="false" />
+    <Slider />
+    <Intro />
+    <Values />
+    <Services />
+    <Team />
+    <Contact />
   </div>
 </template>
 
 <script>
 import ChatBtn from '../components/ChatBtn.vue';
+import Slider from '../components/Slider.vue';
 import Banner from '../components/Banner.vue';
 import Intro from '../components/Intro.vue';
 import Values from '../components/Values.vue';
@@ -23,6 +25,7 @@ export default {
   components: {
     ChatBtn,
     Banner,
+    Slider,
     Intro,
     Values,
     Services,
