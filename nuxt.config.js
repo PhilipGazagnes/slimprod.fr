@@ -14,6 +14,7 @@ module.exports = {
       },
     ],
   },
+  css: ['~/assets/css/main.css', '~/assets/css/fonts.css'],
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
@@ -37,7 +38,7 @@ module.exports = {
     { src: '~/plugins/lazyload.js', mode: 'client' },
     { src: '~/plugins/in-view.js', mode: 'client' },
     { src: '~/plugins/gtm.js', mode: 'client' },
-    { src: '~/plugins/tawk-to.js', mode: 'client' },
+    // { src: '~/plugins/tawk-to.js', mode: 'client' },
     { src: '~/plugins/gsap.js', mode: 'client' },
   ],
   build: {

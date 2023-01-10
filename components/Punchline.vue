@@ -46,25 +46,25 @@ export default {
   font-family: 'Geomanist';
   text-align: center;
   &__main {
-    padding: 0 50px;
-    font-size: 6em;
+    padding: 0 20px;
+    font-size: 3.5em;
     line-height: 1em;
-    text-shadow: 0 10px 0 #e0144c;
-    @media screen and (min-width: 1400px) {
-      font-size: 8em;
-    }
-    @media screen and (min-width: 1600px) {
-      font-size: 9em;
+    text-shadow: 0 0.09em 0 #e0144c;
+    @media screen and (min-width: 992px) {
+      font-size: 6em;
     }
     &__end {
       white-space: nowrap;
     }
   }
   &__sub {
-    padding: 10px 20px;
-    font-size: 3em;
+    padding: 10px 50px;
+    font-size: 1.8em;
     border-radius: 10px;
     margin-top: 30px;
+    @media screen and (min-width: 992px) {
+      font-size: 2.5em;
+    }
   }
 }
 </style>
