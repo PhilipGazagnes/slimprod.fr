@@ -13,10 +13,10 @@
 <script>
 export default {
   eventThemes: [
-    'événement',
-    'mariage',
     'séminaire',
     'team-building',
+    'fête de village',
+    'mariage',
     'soirée festive',
   ],
   data() {
@@ -49,7 +49,7 @@ export default {
     padding: 0 20px;
     font-size: 3.5em;
     line-height: 1em;
-    text-shadow: 0 0.09em 0 #e0144c;
+    text-shadow: 0 0.09em 0 rgba(0, 0, 0, 0.2);
     @media screen and (min-width: 992px) {
       font-size: 6em;
     }

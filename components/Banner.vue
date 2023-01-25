@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <img src="/svg/logo.svg" class="banner__logo" />
+    <img src="/svg/logo-liveoclock-badge.svg" class="banner__logo" />
     <Punchline class="banner__punchline" />
   </div>
 </template>
