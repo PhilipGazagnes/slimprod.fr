@@ -1,5 +1,18 @@
 <template>
   <div>
+    <h1>
+      Live o'clock ! : collectif de musiciens et DJ's pour l'animation de votre
+      événement autour de Montpellier
+    </h1>
+    <p>
+      Vous cherchez une animation fun et conviviale pour votre événement, dont
+      chacun gardera un super souvenir ? Vous imaginez une ambiance musicale
+      originale, pour rigoler, vibrer, danser ?
+    </p>
+    <p>
+      Nous avons les ingrédients qu’il vous faut pour concocter une expérience
+      inoubliable !
+    </p>
     <h2>Concert</h2>
     <p>
       Des ballades envoûtantes aux tubes irrésistibles des 80’s à aujourd’hui,
@@ -21,7 +34,10 @@
     </p>
     <h2>DJ set</h2>
     <p>bla bla bla</p>
+    <div style="padding: 20px; border: 1px solid #fff">
+      <h4>On vient chez vous</h4>
+      ou
+      <h4>Vous venez chez nous</h4>
+    </div>
   </div>
 </template>
-
-<style lang="postcss"></style>

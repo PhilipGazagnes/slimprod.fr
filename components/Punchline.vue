@@ -4,8 +4,14 @@
       live music <span class="punchline__main__end">& fun !</span>
     </div>
     <div class="punchline__sub">
-      Pour votre
-      <span ref="theme">{{ $options.eventThemes[activeTheme] }}</span>
+      <span class="punchline__sub__txt">
+        Pour votre
+        <span ref="theme" class="punchline__sub__theme">
+          <strong class="punchline__sub__theme__txt">
+            {{ $options.eventThemes[activeTheme] }}
+          </strong>
+        </span>
+      </span>
     </div>
   </div>
 </template>
@@ -64,6 +70,28 @@ export default {
     margin-top: 30px;
     @media screen and (min-width: 992px) {
       font-size: 2.5em;
+    }
+    &__txt {
+      background: rgba(0, 0, 0, 0.1);
+      padding: 0 15px;
+    }
+    &__theme {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        background: red;
+        bottom: 10px;
+        z-index: 0;
+      }
+      &__txt {
+        position: relative;
+        z-index: 1;
+        font-weight: normal;
+        padding: 0 5px;
+      }
     }
   }
 }

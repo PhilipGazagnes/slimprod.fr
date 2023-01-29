@@ -25,12 +25,10 @@ export default {};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  transform: rotate(-5deg);
+  background: #111;
   &__img {
-    border-radius: 50px 0;
     width: 400px;
     margin: 0 10px 20px;
-    box-shadow: 20px 20px 0 #9a1663;
   }
 }
 </style>
